@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_second_apps/widgets/transaction_list.dart';
 
 import './widgets/new_transaction.dart';
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.amber,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-            title: TextStyle(
+            headline6: TextStyle(
               fontFamily: 'OpenSans',
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
             button: TextStyle(color: Colors.white)),
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
-                title: TextStyle(
+                headline6: TextStyle(
                   fontFamily: 'OpenSans',
                   fontSize: 20,
                 ),
